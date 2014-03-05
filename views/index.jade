@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  .posts
+    each posts, tag in tag2post
+      p.tag #{tag}
+      ul
+        each post, index in posts
+          li
+            a(href='/post/#{post.name}') #{post.title} &nbsp;&nbsp;&nbsp;
+            span #{post.date}

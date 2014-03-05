@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/md.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/jquery.snippet.min.css')
+
+    script(src='/javascripts/jquery.js')
+    script(src='/javascripts/jquery.snippet.min.js')
+    script.
+      $(document).ready(function() { //greenlcd, peachpuff
+        $("pre").snippet("javascript", {style:"peachpuff", showNum:false});
+      });
+
+  body
+    main
+      block content
+    .footer
+      include _footer

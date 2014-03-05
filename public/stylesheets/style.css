@@ -1,0 +1,37 @@
+::selection {
+    background: #9CBBC6; /* Safari */
+}
+
+a:hover {
+    color: #2167AD;
+    text-decoration: underline;
+}
+
+.tip {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.tip a {
+    color: rgba(65, 131, 196, 0.34);
+}
+
+.tip a:hover {
+    color: rgba(46, 88, 130, 1);
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    border-bottom: solid rgb(207, 139, 139) 5px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(152, 109, 38);
+}
